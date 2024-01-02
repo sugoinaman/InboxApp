@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: inbox-app
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: Iv1.9e9c6997275bfbde
+            client-secret: 1167a559330d4644ba1681ad1769df2b854f9dc9
+  cassandra:
+    keyspace-name: main
+    username: sROyxrnJNsZozEEmdgIptaQG
+    password: BFSnytuJzhea2soDdnJxZ,h89sYnWKZKxfNzisZMJWhDLw-+AobSka+ZRsXObx4ebosU2ZZi+NDZZ77LUfOIOAPg,E_SHkKCqwtA+qOeyffc5dtuz,YcKsRvHFzr,l4v
+    schema-action:
+
+
+
+
