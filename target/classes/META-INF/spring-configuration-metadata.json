@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "datastax.astra",
+      "type": "com.example.inboxapp.DataStaxAstraProperties",
+      "sourceType": "com.example.inboxapp.DataStaxAstraProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "datastax.astra.secure-connect-bundle",
+      "type": "java.io.File",
+      "sourceType": "com.example.inboxapp.DataStaxAstraProperties"
+    }
+  ],
+  "hints": []
+}
