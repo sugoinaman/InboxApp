@@ -1,32 +1,30 @@
 package com.example.inboxapp.folders;
 
 
-import com.datastax.driver.mapping.annotations.Table;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.cassandra.core.cql.PrimaryKeyType;
-import org.springframework.data.cassandra.core.mapping.CassandraType;
-import org.springframework.data.cassandra.core.mapping.PrimaryKeyColumn;
 
+@Entity
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-@Table(name = "folders_by_user")
+
+
 public class Folder {
 
+    @Id
+    private String userId;
 
-    @PrimaryKeyColumn(name = "id", ordinal = 0, type = PrimaryKeyType.PARTITIONED)
-    private String id;
-
-    @PrimaryKeyColumn(name = "label", ordinal = 1, type = PrimaryKeyType.CLUSTERED)
     private String label;
-    //we wanted our labels in one node, for some reason.
 
-    @CassandraType(type = CassandraType.Name.TEXT)
     private String color;
-
 
 }
